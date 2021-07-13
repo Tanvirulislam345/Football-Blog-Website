@@ -1,0 +1,51 @@
+/* import font  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/* style header part   */
+
+
+/* section playerblogs style start  */
+
+.container{
+    display: flex;
+    justify-content: center;
+    width: 1050px;
+    background-color: #FFFFFF;
+    margin: auto;
+}
+.playerBlogs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 27px;
+    grid-column-gap: 30px;
+}
+.blogs{
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    height: 444px;
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.blogs img{
+    width: 100%;
+}
+.blogs h3{
+    font-size: 28px;
+    margin: 10px 0px;
+}
+.blogs p{
+
+    font-size: small;
+    line-height: 26px;
+}
+
+/* style another section blogheader  */
+.blogheader{
+    display: flex;
+}
