@@ -6,11 +6,79 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-/* style header part   */
+
+/* style header part navigation bar  */
+header{
+    background-color: rgb(44, 44, 87);
+}
+
+.navigationBar{
+    display: flex;
+    justify-content: space-between;
+    width: 1050px;
+    margin: auto;
+    padding-top: 42px;
+}
+
+.navlist ul{
+    display: flex;
+    align-items: center;
+}
+.navlist ul li{
+    list-style-type: none;
+    padding: 0px 20px;
+
+}
+.navlist ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+}
+.navlogo h2{
+    font-size: 14px;
+    padding: 0px 10px;
+    color: white;
+    background-color: #E02C6D;
+}
+.navlogo .login{
+    padding-right: 10px;
+}
+
+/* style header part called blogheader   */
+.blogheader1{
+    display: flex;
+    margin-bottom: 55px;
+}
+.blogheader1 .frontpage{
+    width: 50%;
+    padding: 5%;
+}
+.heading1 h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 80px;
+    color: #FFFFFF;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+.heading1 button{
+    margin-left: 30px;
+    margin-top: 18px;
+    padding: 10px 24px;
+    font-size: 16px;
+    color: white;
+    background-color: #E02C6D;
+}
+.heading1 button:hover{
+    background-image: linear-gradient(#E02C6D, orange);
+}
+.player1 img{
+    width: 100%;
+}
 
 
 /* section playerblogs style start  */
-
 .container{
     display: flex;
     justify-content: center;
@@ -28,24 +96,157 @@
     display: flex;
     flex-direction: column;
     width: 330px;
-    height: 444px;
     padding: 15px;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 }
 .blogs img{
     width: 100%;
+    height: 282px;
 }
 .blogs h3{
     font-size: 28px;
     margin: 10px 0px;
 }
 .blogs p{
-
     font-size: small;
     line-height: 26px;
+    padding-bottom: 10px;
 }
 
-/* style another section blogheader  */
-.blogheader{
+/* style another section blogheader2  */
+.blogheader2{
     display: flex;
+
+}
+.blogheader2 .frontpage{
+    width: 50%;
+    margin-top: 130px;
+}
+.heading2{
+    position: relative;
+    top: 50px;
+}
+.heading2 h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    color: #0A0826;
+}
+.heading2 p{
+    margin-top: 8px;
+    margin-bottom: 6px;
+    font-size: 16px;
+    line-height: 28px;
+}
+.heading2 button{
+    margin-top: 18px;
+    padding: 10px 24px;
+    font-size: 16px;
+    color: white;
+    background-color: #E02C6D;
+}
+.heading2 button:hover{
+    background-image: linear-gradient(#E02C6D, orange);
+}
+.player2 img{
+    position: relative;
+    left: 40px;
+    width: 100%;
+}
+
+/* style top supporter section  */
+.sectionSupporter{
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.15);
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.sectionTitle{
+    padding: 20px;
+    font-size: 24px;
+    color:  #562EFF;
+}
+.topSupporters{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 27px;
+    grid-column-gap: 30px;
+    padding: 10px;
+
+}
+.supporters{
+    display: flex;
+    align-items: center;
+    width: 320px;
+    padding: 15px;
+
+}
+.supporters img{
+    width: 67px;
+    height: 67px;
+}
+.supporters h3{
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+/* style section top news  */
+.topnews{
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.15);
+}
+.topnews h2{
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 24px;
+    color:  #562EFF;
+}
+.newslist{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 27px;
+    grid-column-gap: 30px;
+    padding: 20px;
+
+}
+.news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 340px;
+}
+.news img{
+    width: 100%;
+    height: 192px;
+}
+.news p{
+    font-size: 14px;
+    text-align: justify;
+    padding-top: 10px;
+}
+
+/*  style footer section   */
+footer{
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+footer div{
+    margin: auto;
+}
+.footer img{
+    width: 483.87px;
+    height: 110px;
+}
+
+.footer .socialMidea{
+    margin: 0px 14px;
+    color: gray;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* style use for responsive we use media queries  */
+@media only screen and (max-width) {
+    
 }
